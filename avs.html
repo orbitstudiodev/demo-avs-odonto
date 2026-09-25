@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<!-- PERSONALIZAR POR LEAD: título e descrição -->
+<title>AVS Odontologia & Estética — Ibiporã, PR</title>
+<meta name="description" content="Odontologia e harmonização facial com Dr. Augusto V. Schaidhauer, em Ibiporã - PR. Agende sua avaliação pelo chat." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+/* ============ PALETA — PERSONALIZAR POR LEAD ============ */
+:root{
+  --bg:#faf9f6;
+  --surface:#ffffff;
+  --ink:#1a1f1f;
+  --ink-soft:#5c6462;
+  --line:#e2e0d8;
+  --petrol:#161b1a;      /* cor institucional — preto petróleo, do perfil do Instagram */
+  --petrol-soft:#eef0ef;
+  --accent:#a8823f;      /* destaque, só para CTA — dourado quente */
+  --accent-ink:#ffffff;
+  --radius:10px;
+  --maxw:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:Inter,system-ui,sans-serif;font-size:17px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:400;line-height:1.15;letter-spacing:-.01em;margin:0}
+p{margin:0}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  min-height:52px;padding:0 26px;border:0;border-radius:999px;cursor:pointer;
+  font:600 16px/1 Inter,sans-serif;transition:background .25s ease,transform .15s ease,color .25s ease;
+}
+.btn--primary{background:var(--accent);color:var(--accent-ink)}
+.btn--primary:hover{background:#8f6e33}
+.btn--ghost{background:transparent;color:var(--petrol);border:1px solid var(--petrol)}
+.btn--ghost:hover{background:var(--petrol);color:#fff}
+.eyebrow{font:600 12px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-soft)}
+section{padding:88px 0}
+@media (max-width:720px){section{padding:56px 0}body{font-size:16px}}
+
+/* ============ HEADER (WORDMARK FIXO — nunca substituir por logo/ícone) ============ */
+header{position:sticky;top:0;z-index:40;background:rgba(251,250,247,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px}
+.wordmark{font-family:Fraunces,serif;font-size:21px;letter-spacing:-.01em;text-decoration:none;white-space:nowrap}
+@media (max-width:560px){.bar{gap:12px}.wordmark{font-size:16px}.wordmark span{display:none}.bar .btn{padding:0 14px;font-size:14px;min-height:42px}}
+.wordmark span{color:var(--ink-soft)}
+nav{display:flex;gap:28px;align-items:center}
+nav a{font-size:15px;text-decoration:none;color:var(--ink-soft)}
+nav a:hover{color:var(--ink)}
+.bar .btn{min-height:44px;padding:0 18px;font-size:15px}
+@media (max-width:860px){nav{display:none}}
+
+/* ============ HERO ============ */
+.hero{position:relative;min-height:calc(100svh - 68px);display:flex;align-items:flex-end;padding:0}
+.hero__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* PLACEHOLDER DE FOTO DE AMBIENTE — substituir pela foto real do consultório */
+.hero__img--placeholder{background:linear-gradient(160deg,#20302e,var(--petrol) 70%);display:flex;align-items:center;justify-content:center}
+.hero__img--placeholder svg{width:120px;height:120px;stroke:rgba(255,255,255,.16)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(14,28,28,.86) 0%,rgba(14,28,28,.45) 45%,rgba(14,28,28,.15) 100%)}
+.hero__inner{position:relative;z-index:2;width:100%;padding:0 20px 56px;max-width:var(--maxw);margin:0 auto;color:#fff}
+.hero h1{font-size:clamp(34px,6.2vw,60px);max-width:16ch}
+.hero p{margin-top:18px;max-width:46ch;color:rgba(255,255,255,.85)}
+.hero__actions{margin-top:30px;display:flex;flex-wrap:wrap;gap:12px}
+.hero__actions .btn--ghost{color:#fff;border-color:rgba(255,255,255,.55)}
+.hero__actions .btn--ghost:hover{background:#fff;color:var(--ink)}
+.hero__meta{margin-top:28px;padding-top:18px;border-top:1px solid rgba(255,255,255,.22);display:flex;flex-wrap:wrap;gap:8px 26px;font-size:14px;color:rgba(255,255,255,.8)}
+
+/* ============ SOBRE ============ */
+.sobre{background:var(--surface);border-block:1px solid var(--line)}
+.sobre__grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.sobre h2{font-size:clamp(26px,3.4vw,38px);margin-top:14px;max-width:18ch}
+.sobre p+p{margin-top:16px}
+.sobre .lead{margin-top:22px;color:var(--ink-soft)}
+.ficha{margin-top:26px;border-top:1px solid var(--line);padding-top:18px;font-size:15px;color:var(--ink-soft)}
+.ficha b{color:var(--ink);font-weight:600}
+.ficha div+div{margin-top:8px}
+.retrato{position:relative}
+.retrato img{border-radius:var(--radius);width:100%;height:100%;object-fit:cover;aspect-ratio:4/5}
+/* PLACEHOLDER DE FOTO DE PESSOA — substituir pela foto real do dentista/equipe */
+.pessoa{
+  aspect-ratio:4/5;border:1px dashed var(--line);border-radius:var(--radius);
+  background:var(--petrol-soft);display:flex;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:24px;color:var(--ink-soft);font-size:14px;gap:10px;
+}
+.pessoa svg{width:44px;height:44px;stroke:var(--petrol);opacity:.55}
+.retrato__pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:stretch}
+.retrato__pair figure{margin:0;display:flex}
+.retrato__pair figure>*{width:100%}
+.retrato figcaption{margin-top:10px;font-size:13px;color:var(--ink-soft)}
+@media (max-width:900px){.sobre__grid{grid-template-columns:1fr;gap:34px}}
+
+/* ============ TRATAMENTOS ============ */
+.trat__head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.trat h2{font-size:clamp(26px,3.4vw,38px);margin-top:12px;max-width:20ch}
+.trat__head p{max-width:34ch;color:var(--ink-soft);font-size:15px}
+.trat__list{margin-top:44px;border-top:1px solid var(--line)}
+.trat__item{
+  display:grid;grid-template-columns:44px 1fr 1.2fr;gap:24px;align-items:start;
+  padding:26px 0;border-bottom:1px solid var(--line);
+}
+.trat__item svg{width:26px;height:26px;stroke:var(--petrol);fill:none;stroke-width:1.5}
+.trat__item h3{font-size:20px}
+.trat__item p{color:var(--ink-soft);font-size:15.5px}
+@media (max-width:760px){.trat__item{grid-template-columns:32px 1fr;gap:16px}.trat__item p{grid-column:2}}
+
+/* ============ AMBIENTE ============ */
+.ambiente{background:var(--petrol);color:#fff}
+.ambiente .eyebrow{color:rgba(255,255,255,.62)}
+.ambiente__grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.ambiente h2{font-size:clamp(26px,3.4vw,36px);margin-top:12px;max-width:16ch}
+.ambiente p{margin-top:18px;color:rgba(255,255,255,.78)}
+.ambiente img{border-radius:var(--radius);aspect-ratio:5/4;object-fit:cover;width:100%}
+.ambiente .btn{margin-top:28px}
+.ambiente .btn--ghost{color:#fff;border-color:rgba(255,255,255,.5)}
+.ambiente .btn--ghost:hover{background:#fff;color:var(--petrol)}
+@media (max-width:900px){.ambiente__grid{grid-template-columns:1fr;gap:30px}}
+
+/* ============ CONTATO ============ */
+.contato__grid{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.contato h2{font-size:clamp(26px,3.4vw,38px);margin-top:12px}
+.contato .sub{margin-top:14px;color:var(--ink-soft);max-width:40ch}
+form{margin-top:26px;display:grid;gap:14px}
+label{font-size:14px;color:var(--ink-soft);display:grid;gap:6px}
+input,textarea{
+  font:400 16px Inter,sans-serif;color:var(--ink);background:var(--surface);
+  border:1px solid var(--line);border-radius:var(--radius);padding:13px 14px;min-height:50px;width:100%;
+}
+input:focus,textarea:focus{outline:2px solid var(--petrol);outline-offset:1px;border-color:transparent}
+textarea{min-height:110px;resize:vertical}
+.form__row{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:4px}
+.form__row small{color:var(--ink-soft);font-size:13.5px}
+.form__ok{display:none;font-size:14px;color:var(--petrol);background:var(--petrol-soft);padding:12px 14px;border-radius:var(--radius)}
+.dados{display:grid;gap:22px;align-content:start}
+.dados h3{font-size:16px;font-family:Inter,sans-serif;font-weight:600}
+.dados p{color:var(--ink-soft);font-size:15.5px;margin-top:4px}
+.mapa{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;height:280px}
+.mapa iframe{width:100%;height:100%;border:0;display:block}
+@media (max-width:900px){.contato__grid{grid-template-columns:1fr;gap:38px}}
+
+/* ============ RODAPÉ ============ */
+footer{border-top:1px solid var(--line);padding:38px 0;background:var(--surface)}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center;font-size:14px;color:var(--ink-soft)}
+.foot a{text-decoration:none}
+.foot nav{gap:18px}
+
+/* ============ CHAT DE IA ============ */
+.chat-fab{
+  position:fixed;right:18px;bottom:18px;z-index:60;width:58px;height:58px;border-radius:50%;
+  border:0;cursor:pointer;background:var(--petrol);color:#fff;display:grid;place-items:center;
+  box-shadow:0 6px 20px rgba(20,40,38,.28);transition:transform .2s ease;
+}
+.chat-fab:hover{transform:translateY(-2px)}
+.chat-fab svg{width:27px;height:27px;stroke:#fff;fill:none;stroke-width:1.6}
+.chat-tip{
+  position:fixed;right:18px;bottom:88px;z-index:60;max-width:230px;
+  background:var(--surface);border:1px solid var(--line);border-radius:12px;
+  padding:12px 34px 12px 14px;font-size:14.5px;box-shadow:0 8px 24px rgba(20,40,38,.14);
+  opacity:0;transform:translateY(6px);pointer-events:none;transition:opacity .3s ease,transform .3s ease;
+}
+.chat-tip.is-on{opacity:1;transform:none;pointer-events:auto}
+.chat-tip button{position:absolute;top:6px;right:6px;width:24px;height:24px;border:0;background:none;cursor:pointer;color:var(--ink-soft);font-size:15px;line-height:1}
+.chat-panel{
+  position:fixed;right:18px;bottom:88px;z-index:61;width:min(360px,calc(100vw - 36px));
+  background:var(--surface);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+  box-shadow:0 18px 44px rgba(20,40,38,.2);display:none;flex-direction:column;
+}
+.chat-panel.is-open{display:flex}
+.chat-head{background:var(--petrol);color:#fff;padding:14px 16px;display:flex;justify-content:space-between;align-items:center}
+.chat-head strong{font-weight:600;font-size:15px}
+.chat-head small{display:block;font-size:12.5px;color:rgba(255,255,255,.7)}
+.chat-head button{background:none;border:0;color:#fff;font-size:20px;cursor:pointer;line-height:1}
+.chat-log{padding:16px;display:flex;flex-direction:column;gap:10px;height:290px;overflow-y:auto;background:var(--bg)}
+.msg{max-width:84%;padding:10px 13px;border-radius:12px;font-size:15px;line-height:1.5}
+.msg--bot{background:var(--surface);border:1px solid var(--line);border-bottom-left-radius:4px}
+.msg--user{background:var(--petrol);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+.dots span{display:inline-block;width:6px;height:6px;margin-right:3px;border-radius:50%;background:var(--ink-soft);animation:b 1.1s infinite}
+.dots span:nth-child(2){animation-delay:.16s}.dots span:nth-child(3){animation-delay:.32s}
+@keyframes b{0%,60%,100%{opacity:.25;transform:translateY(0)}30%{opacity:1;transform:translateY(-3px)}}
+.chat-form{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line);background:var(--surface)}
+.chat-form input{min-height:44px;flex:1}
+.chat-form button{min-height:44px;padding:0 16px;border:0;border-radius:999px;background:var(--accent);color:#fff;font:600 15px Inter,sans-serif;cursor:pointer}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<!-- HEADER — WORDMARK EM TEXTO (ponto fixo: nunca usar logo/ícone/monograma) -->
+<header>
+  <div class="wrap bar">
+    <a class="wordmark" href="#top">AVS <span>Odontologia & Estética</span></a>
+    <nav>
+      <a href="#sobre">A clínica</a>
+      <a href="#tratamentos">Tratamentos</a>
+      <a href="#ambiente">O atendimento</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <button class="btn btn--primary" data-chat-open>Agende sua avaliação</button>
+  </div>
+</header>
+
+<!-- HERO — TÍTULO É O PRINCIPAL PONTO DE PERSONALIZAÇÃO POR LEAD -->
+<section class="hero" id="top">
+  <img class="hero__img" src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?q=80&w=1600&auto=format&fit=crop" alt="Consultório odontológico moderno" width="1600" height="1104" />
+  <div class="hero__inner">
+    <!-- PERSONALIZAR POR LEAD: título principal -->
+    <h1>Odontologia e harmonização facial num só lugar</h1>
+    <p>Consultório do Dr. Augusto V. Schaidhauer em Ibiporã. Do cuidado com o sorriso à estética facial, com plano explicado antes de qualquer procedimento.</p>
+    <div class="hero__actions">
+      <button class="btn btn--primary" data-chat-open>Agende sua avaliação</button>
+      <a class="btn btn--ghost" href="#tratamentos">Ver tratamentos</a>
+    </div>
+    <div class="hero__meta">
+      <span>Atendimento com hora marcada</span>
+      <span>Av. Dom Pedro II, 316 — Centro, Ibiporã - PR</span>
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE A CLÍNICA -->
+<section class="sobre" id="sobre">
+  <div class="wrap sobre__grid">
+    <div>
+      <span class="eyebrow">A clínica</span>
+      <h2>Odontologia e estética facial sob o mesmo cuidado técnico</h2>
+      <p class="lead">A AVS Odontologia & Estética é a clínica do Dr. Augusto V. Schaidhauer, em Ibiporã. A proposta é simples: reunir num só endereço o cuidado com dentes e o cuidado com a expressão do rosto, sem tratar um como acessório do outro.</p>
+      <p class="lead">Extração, restauração, clareamento ou um procedimento de harmonização facial — o paciente sai da consulta sabendo exatamente o que será feito, quantas sessões leva e qual o investimento, antes de marcar qualquer procedimento.</p>
+      <!-- PERSONALIZAR POR LEAD: dados técnicos reais (CRO, responsável, estrutura) -->
+      <div class="ficha">
+        <div><b>Responsável técnico:</b> Dr. Augusto V. Schaidhauer — Cirurgião-Dentista</div>
+        <div><b>Atuação:</b> odontologia geral e harmonização facial</div>
+        <div><b>Fundador:</b> AVS Odontologia & Estética, Ibiporã - PR</div>
+      </div>
+      <button class="btn btn--ghost" data-chat-open style="margin-top:26px">Falar sobre o meu caso</button>
+    </div>
+    <div class="retrato">
+      <div class="retrato__pair">
+        <figure style="margin:0">
+          <!-- PLACEHOLDER: substituir pela foto real do Dr. Augusto -->
+          <div class="pessoa">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+            Foto do Dr. Augusto<br />(placeholder)
+          </div>
+        </figure>
+        <figure style="margin:0">
+          <!-- PLACEHOLDER: substituir pela foto real do consultório -->
+          <div class="pessoa" style="aspect-ratio:4/5">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg>
+            Foto do consultório<br />(placeholder)
+          </div>
+        </figure>
+      </div>
+      <figcaption>Centro Odontológico Concerto, Ibiporã — Odontologia e harmonização facial.</figcaption>
+    </div>
+  </div>
+</section>
+
+<!-- TRATAMENTOS -->
+<section class="trat" id="tratamentos">
+  <div class="wrap">
+    <div class="trat__head">
+      <div>
+        <span class="eyebrow">Tratamentos</span>
+        <h2>Sorriso e expressão facial, tratados com o mesmo cuidado</h2>
+      </div>
+      <p>Se não souber por onde começar, a consulta de avaliação define o caminho — ela existe justamente para isso.</p>
+    </div>
+    <div class="trat__list">
+      <article class="trat__item">
+        <svg viewBox="0 0 24 24" stroke-linecap="round"><path d="M12 21c-2 0-2.2-6-5-6-1.7 0-2.5-2-2.5-4.5C4.5 7 6.5 4.5 9 4.5c1.6 0 2.3.8 3 .8s1.4-.8 3-.8c2.5 0 4.5 2.5 4.5 6 0 2.5-.8 4.5-2.5 4.5-2.8 0-3 6-5 6Z"/></svg>
+        <h3>Odontologia geral</h3>
+        <p>Restaurações, extrações e manutenção da saúde bucal, com explicação do procedimento antes de qualquer intervenção.</p>
+      </article>
+      <article class="trat__item">
+        <svg viewBox="0 0 24 24" stroke-linecap="round"><path d="M12 3v2M18.4 5.6l-1.4 1.4M21 12h-2M5 12H3M7 7 5.6 5.6"/><path d="M9 20h6l-1-6H10l-1 6Z"/></svg>
+        <h3>Clareamento dental</h3>
+        <p>Feito em consultório ou com moldeira em casa. Antes, avaliamos sensibilidade e manchas — nem todo escurecimento clareia.</p>
+      </article>
+      <article class="trat__item">
+        <svg viewBox="0 0 24 24" stroke-linecap="round"><rect x="4" y="7" width="16" height="10" rx="2"/><path d="M9 7v10M15 7v10"/></svg>
+        <h3>Facetas e restaurações estéticas</h3>
+        <p>Facetas em resina e restaurações com ensaio prévio: você vê o resultado simulado antes de qualquer desgaste.</p>
+      </article>
+      <article class="trat__item">
+        <svg viewBox="0 0 24 24" stroke-linecap="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
+        <h3>Botox terapêutico e estético</h3>
+        <p>Aplicação avaliada caso a caso, com explicação de indicação, duração do efeito e cuidados após o procedimento.</p>
+      </article>
+      <article class="trat__item">
+        <svg viewBox="0 0 24 24" stroke-linecap="round"><path d="M12 21c-2 0-2.2-6-5-6-1.7 0-2.5-2-2.5-4.5C4.5 7 6.5 4.5 9 4.5c1.6 0 2.3.8 3 .8s1.4-.8 3-.8c2.5 0 4.5 2.5 4.5 6 0 2.5-.8 4.5-2.5 4.5-2.8 0-3 6-5 6Z"/></svg>
+        <h3>Harmonização facial</h3>
+        <p>Preenchimento e procedimentos de harmonização com planejamento fotográfico antes de começar, sem prometer resultado padronizado.</p>
+      </article>
+    </div>
+    <button class="btn btn--primary" data-chat-open style="margin-top:34px">Tirar dúvida sobre um tratamento</button>
+  </div>
+</section>
+
+<!-- AMBIENTE / EXPERIÊNCIA -->
+<section class="ambiente" id="ambiente">
+  <div class="wrap ambiente__grid">
+    <!-- PLACEHOLDER: substituir pela foto real do ambiente da clínica -->
+    <div class="pessoa" style="aspect-ratio:5/4;background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.18);color:rgba(255,255,255,.6)">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4" stroke-linecap="round" style="stroke:rgba(255,255,255,.5)"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/><path d="M8 4v5"/></svg>
+      Foto do ambiente<br />(placeholder)
+    </div>
+    <div>
+      <span class="eyebrow">O atendimento</span>
+      <h2>Uma consulta que começa na hora marcada</h2>
+      <p>A avaliação inicial é o momento de entender o que está sendo tratado, seja um procedimento odontológico ou de harmonização facial, com fotos e planejamento explicados na tela.</p>
+      <p>O orçamento sai por escrito, com o número de sessões definido. Ninguém assina nada no mesmo dia se preferir pensar com calma.</p>
+      <button class="btn btn--ghost" data-chat-open>Ver horários disponíveis</button>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <div class="wrap contato__grid">
+    <div>
+      <span class="eyebrow">Contato</span>
+      <h2>Vamos marcar sua avaliação</h2>
+      <p class="sub">Responda pelo chat para agendar em poucos minutos, ou deixe seus dados aqui que a equipe entra em contato no mesmo dia útil.</p>
+      <form id="form-contato" novalidate>
+        <label>Nome<input name="nome" type="text" autocomplete="name" required placeholder="Como devemos te chamar" /></label>
+        <label>Telefone<input name="telefone" type="tel" inputmode="tel" autocomplete="tel" required placeholder="(11) 90000-0000" /></label>
+        <label>Mensagem<textarea name="mensagem" placeholder="Conte rapidamente o que está sentindo ou o que procura"></textarea></label>
+        <div class="form__row">
+          <button class="btn btn--primary" type="submit">Enviar mensagem</button>
+          <small>Prefere agora? <a href="#" data-chat-open style="color:var(--petrol)">Abra o chat</a>.</small>
+        </div>
+        <p class="form__ok" id="form-ok">Recebido. Este é um modelo de demonstração — no site publicado a mensagem chega direto na clínica.</p>
+      </form>
+    </div>
+    <div class="dados">
+      <!-- PERSONALIZAR POR LEAD: endereço, horário, telefone, embed do mapa -->
+      <div>
+        <h3>Endereço</h3>
+        <p>Av. Dom Pedro II, 316 — Centro<br />Ibiporã - PR, 86200-043</p>
+      </div>
+      <div>
+        <h3>Horário</h3>
+        <p style="color:var(--ink-soft);font-style:italic">Horário a confirmar com a equipe</p>
+      </div>
+      <div>
+        <h3>WhatsApp</h3>
+        <p><a href="https://wa.me/554384574848" target="_blank" rel="noopener" style="color:var(--petrol);text-decoration:underline">(43) 8457-4848</a></p>
+      </div>
+      <div class="mapa">
+        <iframe title="Mapa da localização da clínica" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Av.+Dom+Pedro+II%2C+316%2C+Centro%2C+Ibipor%C3%A3+-+PR%2C+86200-043&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RODAPÉ — WORDMARK EM TEXTO -->
+<footer>
+  <div class="wrap foot">
+    <a class="wordmark" href="#top" style="font-size:18px">AVS <span>Odontologia & Estética</span></a>
+    <p>Av. Dom Pedro II, 316 — Centro, Ibiporã - PR</p>
+    <nav>
+      <a href="https://www.instagram.com/dr.augusto_schaidhauer" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/554384574848" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </div>
+</footer>
+
+<!-- CHAT DE IA — único ponto de contato flutuante -->
+<div class="chat-tip" id="chat-tip" role="status">
+  Tire suas dúvidas aqui 👋
+  <button type="button" aria-label="Fechar aviso" id="chat-tip-close">×</button>
+</div>
+
+<button class="chat-fab" id="chat-fab" aria-label="Abrir chat de atendimento">
+  <svg viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="4" y="7" width="16" height="12" rx="3"/><path d="M12 4v3"/><circle cx="12" cy="3" r="1"/>
+    <path d="M9.5 12v1.5M14.5 12v1.5M10 16.5h4"/><path d="M4 11H2.5M21.5 11H20"/>
+  </svg>
+</button>
+
+<div class="chat-panel" id="chat-panel" role="dialog" aria-label="Chat de atendimento">
+  <div class="chat-head">
+    <div><strong>Assistente AVS</strong><small>Responde em instantes</small></div>
+    <button type="button" id="chat-close" aria-label="Fechar chat">×</button>
+  </div>
+  <div class="chat-log" id="chat-log">
+    <div class="msg msg--bot">Olá! Posso ajudar a agendar uma avaliação ou tirar dúvidas sobre os tratamentos.</div>
+  </div>
+  <form class="chat-form" id="chat-form">
+    <input id="chat-input" type="text" placeholder="Escreva sua mensagem" autocomplete="off" aria-label="Sua mensagem" />
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
+<script>
+(function(){
+  /* PERSONALIZAR POR LEAD: resposta fixa do assistente (nome da clínica) */
+  var RESPOSTA_FIXA = "Olá, sou a assistente virtual da AVS Odontologia & Estética. Como este site é apenas um modelo, não consigo responder agora :)";
+
+  var fab = document.getElementById('chat-fab');
+  var panel = document.getElementById('chat-panel');
+  var tip = document.getElementById('chat-tip');
+  var log = document.getElementById('chat-log');
+  var form = document.getElementById('chat-form');
+  var input = document.getElementById('chat-input');
+  var tipDone = false;
+
+  function hideTip(){ if(!tip) return; tip.classList.remove('is-on'); tipDone = true; }
+  setTimeout(function(){ if(!tipDone && !panel.classList.contains('is-open')) tip.classList.add('is-on'); }, 1600);
+  document.getElementById('chat-tip-close').addEventListener('click', function(e){ e.stopPropagation(); hideTip(); });
+  document.addEventListener('click', function(e){ if(tip.classList.contains('is-on') && !tip.contains(e.target)) hideTip(); }, true);
+
+  function openChat(e){ if(e) e.preventDefault(); hideTip(); panel.classList.add('is-open'); setTimeout(function(){ input.focus(); }, 60); }
+  function closeChat(){ panel.classList.remove('is-open'); }
+  fab.addEventListener('click', function(){ panel.classList.contains('is-open') ? closeChat() : openChat(); });
+  document.getElementById('chat-close').addEventListener('click', closeChat);
+  Array.prototype.forEach.call(document.querySelectorAll('[data-chat-open]'), function(b){ b.addEventListener('click', openChat); });
+
+  function add(cls, html){ var d=document.createElement('div'); d.className='msg '+cls; d.innerHTML=html; log.appendChild(d); log.scrollTop=log.scrollHeight; return d; }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var txt = input.value.trim(); if(!txt) return;
+    add('msg--user', txt.replace(/</g,'&lt;'));
+    input.value = '';
+    var typing = add('msg--bot', '<span class="dots"><span></span><span></span><span></span></span>');
+    setTimeout(function(){ typing.remove(); add('msg--bot', RESPOSTA_FIXA); }, 1400);
+  });
+
+  document.getElementById('form-contato').addEventListener('submit', function(e){
+    e.preventDefault();
+    if(!this.nome.value.trim() || !this.telefone.value.trim()){ this.reportValidity(); return; }
+    document.getElementById('form-ok').style.display = 'block';
+    this.reset();
+  });
+})();
+</script>
+</body>
+</html>
